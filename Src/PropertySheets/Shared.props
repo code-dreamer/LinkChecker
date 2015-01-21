@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <BUILD_DIR>$(SolutionDir)..\Build\$(Configuration)</BUILD_DIR>
+    <BUILD_TMP_DIR>$(SolutionDir)..\Build\Temp\$(Configuration)\$(ProjectName)</BUILD_TMP_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(BUILD_DIR)\</OutDir>
+    <IntDir>$(BUILD_TMP_DIR)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>__WIN32;__WIN32__;_WINDOWS;WINDOWS;WIN32;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./;$(SolutionDir);$(SolutionDir)\Include;$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName);$(BUILD_TMP_DIR);$(INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions>/wd4191 /wd4365 /wd4481 /wd4505 /wd4512 /wd4514 /wd4670 /wd4673 /wd4619 /wd4625 /wd4626 /wd4710 /wd4668 /wd4820 /wd4986 %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <EnablePREfast>true</EnablePREfast>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(BUILD_DIR)\;$(LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BUILD_DIR">
+      <Value>$(BUILD_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BUILD_TMP_DIR">
+      <Value>$(BUILD_TMP_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

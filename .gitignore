@@ -1,28 +1,58 @@
 # Compiled Object files
-*.slo
-*.lo
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
+# Build results
+[Bb]uild/**/*.*
+
+# ui generated files
+ui_p.h
+ui_p.cpp
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+*.pdb
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
 *.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.tlog
+*.lastbuildstate
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.idb
+*.svclog
+*.scc
+*.exp
+*.mo
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
 
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx

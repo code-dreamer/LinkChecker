@@ -1,0 +1,1036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\PropertySheets\Shared.props" />
+    <Import Project="..\PropertySheets\Debug.props" />
+    <Import Project="..\PropertySheets\Qt.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="..\PropertySheets\Shared.props" />
+    <Import Project="..\PropertySheets\Release.props" />
+    <Import Project="..\PropertySheets\Qt.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(BUILD_DIR)\Lib\</OutDir>
+    <IntDir>$(BUILD_TMP_DIR)\Lib\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <OutDir>$(BUILD_DIR)\Lib\</OutDir>
+    <IntDir>$(BUILD_TMP_DIR)\Lib\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile />
+    <Link />
+    <ClCompile>
+      <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>CORE_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <DebugInformationFormat />
+      <EnablePREfast>false</EnablePREfast>
+      <PreprocessorDefinitions>CORE_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link />
+    <Link>
+      <AdditionalDependencies>Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Build\Temp\$(ConfigurationName)\Core\qrc_Core.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_AboutDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_AppSettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_DownloadManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_ExceptionInfoWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_CoreApp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_LocaleManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SettingsDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_Site.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SiteChecker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SiteContainer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SitesDataModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_AboutDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_AppSettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_DownloadManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_ExceptionInfoWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_CoreApp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_LocaleManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SettingsDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_Site.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SiteChecker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SiteContainer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SitesDataModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AppError.cpp" />
+    <ClCompile Include="AppSettings.cpp" />
+    <ClCompile Include="Bugs\Checks.cpp" />
+    <ClCompile Include="Bugs\Debugging.cpp" />
+    <ClCompile Include="Bugs\Exception.cpp" />
+    <ClCompile Include="Bugs\ExceptionHandler.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="DownloadManager.cpp" />
+    <ClCompile Include="FileOpenError.cpp" />
+    <ClCompile Include="FileParseError.cpp" />
+    <ClCompile Include="GUI\AboutDialog.cpp" />
+    <ClCompile Include="GUI\ExceptionInfoWindow.cpp" />
+    <ClCompile Include="GUI\MainWindow.cpp" />
+    <ClCompile Include="GUI\SettingsDialog.cpp" />
+    <ClCompile Include="IOError.cpp" />
+    <ClCompile Include="LocaleManager.cpp" />
+    <ClCompile Include="Logging\ConsoleLogAppender.cpp" />
+    <ClCompile Include="Logging\DebugConsoleLogAppender.cpp" />
+    <ClCompile Include="Logging\FileLogAppender.cpp" />
+    <ClCompile Include="Logging\Logger.cpp" />
+    <ClCompile Include="Logging\LogStream.cpp" />
+    <ClCompile Include="ParseError.cpp" />
+    <ClCompile Include="SiteChecker.cpp" />
+    <ClCompile Include="CoreApp.cpp" />
+    <ClCompile Include="Site.cpp" />
+    <ClCompile Include="SiteContainer.cpp" />
+    <ClCompile Include="SitesDataModel.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Tools\Filesystem.cpp" />
+    <ClCompile Include="Tools\FilesystemErrors.cpp" />
+    <ClCompile Include="Tools\Numeric.cpp" />
+    <ClCompile Include="Tools\Proc.cpp" />
+    <ClCompile Include="Tools\QtHelpers.cpp" />
+    <ClCompile Include="Tools\StringTools.cpp" />
+    <ClCompile Include="Tools\Sys.cpp" />
+    <ClCompile Include="Tools\WinApi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_AboutDialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_ExceptionInfoWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_MainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_SettingsDialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="AppSettings.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AppSettings.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/AppSettings.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AppSettings.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/AppSettings.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="AppError.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\BugsPrec.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\Checks.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\Debugging.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\Exception.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\ExceptionHandler.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Core.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="CoreLib.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="CoreApp.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CoreApp.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/CoreApp.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CoreApp.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/CoreApp.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="GUI\MainWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/MainWindow.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MainWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/MainWindow.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="DownloadManager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DownloadManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/DownloadManager.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DownloadManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/DownloadManager.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="FileOpenError.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="FileParseError.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ExceptionInfoWindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ExceptionInfoWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/ExceptionInfoWindow.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ExceptionInfoWindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/ExceptionInfoWindow.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="GUI\SettingsDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SettingsDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/SettingsDialog.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SettingsDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/SettingsDialog.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="GUI\AboutDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AboutDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/AboutDialog.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AboutDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/GUI/AboutDialog.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="IOError.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="SiteChecker.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SiteChecker.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/SiteChecker.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SiteChecker.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/SiteChecker.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="Site.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Site.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/Site.h"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing Site.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/Site.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="SiteContainer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SiteContainer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/SiteContainer.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SiteContainer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/SiteContainer.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="SitesDataModel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SitesDataModel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/SitesDataModel.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SitesDataModel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/SitesDataModel.h"</Command>
+    </CustomBuild>
+    <CustomBuild Include="Logging\ConsoleLogAppender.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Logging\DebugConsoleLogAppender.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Logging\FileLogAppender.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Logging\LogAppender.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Logging\Logger.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Logging\LogLevel.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Logging\LogStream.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="ParseError.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="stdafx.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Cpp.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Filesystem.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\FilesystemErrors.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\NonAssignable.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Numeric.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Proc.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\QtHelpers.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\ScopeExit.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Singleton.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\StringTools.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Sys.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\ToolsLib.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="Tools\WinApi.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resources\Core.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\Resources\Images\error_icon_32x32.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\%(Filename)\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\..\..\Build\Temp\$(ConfigurationName)\%(Filename)\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\Resources\Images\error_icon_32x32.png;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\%(Filename)\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\..\..\Build\Temp\$(ConfigurationName)\%(Filename)\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resources\Images\error_icon_32x32.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GUI\ui\MainWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GUI\ui\ExceptionInfoWindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GUI\ui\AboutDialog.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ui\SettingsDialog.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="Resources\Translations\ru_RU.ts">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Core.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="LocaleManager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing LocaleManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DDEBUG -D_DEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/LocaleManager.h"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing LocaleManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\Build\Temp\$(ConfigurationName)\Core\moc_%(Filename).cpp"  -DCORE_LIB -DQT_DLL -DQT_NO_ACCESSIBILITY -DQT_USE_FAST_CONCATENATION -DQT_USE_FAST_OPERATOR_PLUS -DQT_LARGEFILE_SUPPORT -DQT_USE_QSTRINGBUILDER -DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII -DQT_NO_CAST_FROM_BYTEARRAY -DNDEBUG -D_NDEBUG -D__WIN32 -D__WIN32__ -D_WINDOWS -DWINDOWS -DWIN32 -D_WIN32 -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINDLL  "-I$(QT_INCLUDE_DIR)\." "-I$(QT_INCLUDE_DIR)\QtCore" "-I$(QT_INCLUDE_DIR)\QtConcurrent" "-I$(QT_INCLUDE_DIR)\QtGui" "-I$(QT_INCLUDE_DIR)\GLES2" "-I$(QT_INCLUDE_DIR)\KHR" "-I$(QT_INCLUDE_DIR)\QtDBus" "-I$(QT_INCLUDE_DIR)\QtNetwork" "-I$(QT_INCLUDE_DIR)\QtOpenGL" "-I$(QT_INCLUDE_DIR)\QtPlatformSupport" "-I$(QT_INCLUDE_DIR)\QtPrintSupport" "-I$(QT_INCLUDE_DIR)\QtSql" "-I$(QT_INCLUDE_DIR)\QtTest" "-I$(QT_INCLUDE_DIR)\QtWidgets" "-I$(QT_INCLUDE_DIR)\QtXml" "-I$(QT_INCLUDE_DIR)\QtZlib" "-I$(QTDIR)\mkspecs\win32-msvc2012" "-I." "-I$(SolutionDir)\." "-I$(SolutionDir)\Include" "-I$(BUILD_TMP_DIR)\$(ConfigurationName)\$(ProjectName)\." "-I$(BUILD_TMP_DIR)\." "-I$(INCLUDE)\." "-fstdafx.h" "-f../../../../Src/Core/LocaleManager.h"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\..\..\Build\Temp\$(ConfigurationName)\Core" MocDir=".\..\..\Build\Temp\$(ConfigurationName)\Core" MocOptions="" RccDir=".\..\..\Build\Temp\$(ConfigurationName)\Core" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="-no-obsolete" Qt5Version_x0020_Win32="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

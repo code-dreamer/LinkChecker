@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Bugs">
+      <UniqueIdentifier>{ad7a8c44-c349-48ea-9328-acf52ae21b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{80f3db6c-1f22-462e-8a68-8200a3150111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{35221566-7af0-4e51-9aeb-bafceaa637e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{2dad9b7d-9ad8-4333-bdb6-f380d163d04d}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{d8e10195-ae57-4ebd-a281-976b21f4f10f}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{4133f47b-5059-46a2-a6d4-c82a88611fa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="GUI\ui">
+      <UniqueIdentifier>{cbbac4b7-9a17-42b4-a1b4-c199ab2601fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Filesystem.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Numeric.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Proc.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\QtHelpers.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\StringTools.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\WinApi.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_AppSettings.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_AppSettings.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\MainWindow.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_MainWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_MainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\$(ConfigurationName)\Core\qrc_Core.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOpenError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileParseError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IOError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SiteChecker.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SiteChecker.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SiteChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SiteContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SiteContainer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SiteContainer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SitesDataModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SitesDataModel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SitesDataModel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Site.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bugs\Checks.cpp">
+      <Filter>Bugs</Filter>
+    </ClCompile>
+    <ClCompile Include="Bugs\Debugging.cpp">
+      <Filter>Bugs</Filter>
+    </ClCompile>
+    <ClCompile Include="Bugs\Exception.cpp">
+      <Filter>Bugs</Filter>
+    </ClCompile>
+    <ClCompile Include="Bugs\ExceptionHandler.cpp">
+      <Filter>Bugs</Filter>
+    </ClCompile>
+    <ClCompile Include="ParseError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\ExceptionInfoWindow.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_ExceptionInfoWindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_ExceptionInfoWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_Site.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_Site.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_DownloadManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_DownloadManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="DownloadManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\FilesystemErrors.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_SettingsDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_SettingsDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\SettingsDialog.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging\DebugConsoleLogAppender.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging\FileLogAppender.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging\Logger.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging\LogStream.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Sys.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Logging\ConsoleLogAppender.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_CoreApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_CoreApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\AboutDialog.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_AboutDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_AboutDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LocaleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Debug\Core\moc_LocaleManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Build\Temp\Release\Core\moc_LocaleManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CoreApp.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AppSettings.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\MainWindow.h">
+      <Filter>GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\Core.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SiteChecker.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SiteContainer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SitesDataModel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Site.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ExceptionInfoWindow.h">
+      <Filter>GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DownloadManager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\SettingsDialog.h">
+      <Filter>GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ui\ExceptionInfoWindow.ui">
+      <Filter>GUI\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ui\AboutDialog.ui">
+      <Filter>GUI\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ui\SettingsDialog.ui">
+      <Filter>GUI\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\ui\MainWindow.ui">
+      <Filter>GUI\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GUI\AboutDialog.h">
+      <Filter>GUI</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AppError.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\BugsPrec.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Core.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CoreLib.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FileOpenError.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FileParseError.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IOError.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ParseError.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\Images\error_icon_32x32.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_AboutDialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_ExceptionInfoWindow.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_MainWindow.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Build\Temp\$(ConfigurationName)\Core\ui_SettingsDialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\Checks.h">
+      <Filter>Bugs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\Debugging.h">
+      <Filter>Bugs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\Exception.h">
+      <Filter>Bugs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Bugs\ExceptionHandler.h">
+      <Filter>Bugs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\ConsoleLogAppender.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\DebugConsoleLogAppender.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\FileLogAppender.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\LogAppender.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\Logger.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\LogLevel.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Logging\LogStream.h">
+      <Filter>Logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Cpp.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Filesystem.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\FilesystemErrors.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\NonAssignable.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Numeric.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Proc.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\QtHelpers.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\ScopeExit.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Singleton.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\StringTools.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\Sys.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\ToolsLib.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Tools\WinApi.h">
+      <Filter>Tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\Translations\ru_RU.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LocaleManager.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Core.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
