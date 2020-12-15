@@ -1,3 +1,3 @@
 # LinkChecker
 
-Checks if some html links from input csv file is dead.
+Checks if some of html links from input csv file are dead.
